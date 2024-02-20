@@ -9,7 +9,7 @@ export default function CollectionCard() {
   };
   return (
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 ">
-      <Card href="#" className="mx-4 h-44" style={cardStyle}>
+      <Card href="#" className="mx-4 mb-6 h-44" style={cardStyle}>
         <div>
           <h5 className="text-sm font-normal tracking-tight text-gray-700 dark:text-gray-400">
             COLLECTION
