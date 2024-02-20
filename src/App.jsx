@@ -2,6 +2,8 @@ import Header from "./components/Header.jsx";
 import MyCarousel from "./components/MyCarousel.jsx";
 import CollectionCard from "./components/CollectionCard.jsx";
 import CuisineCard from "./components/CuisineCard.jsx";
+import RecipeCard from "./components/RecipeCard.jsx";
+import smileface from "./assets/icon/smileface.svg";
 
 export default function App() {
   return (
@@ -33,7 +35,26 @@ export default function App() {
             <CuisineCard />
           </div>
         </div>
-        <div className="trending"></div>
+        <div className="trending mt-10">
+          <div className="flex justify-between mr-6">
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ml-4">
+              Trending Now
+            </h5>
+            <button className="more w-6">
+              <img src={smileface} alt="" />
+            </button>
+          </div>
+          <div className="flex flex-wrap mt-4">
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+          </div>
+        </div>
         <div className="recommend"></div>
       </main>
       <footer></footer>
