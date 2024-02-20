@@ -14,7 +14,7 @@ export default function CuisineCard() {
     >
       <div>
         <h5 className="text-sm text-center font-normal tracking-tight text-gray-700 dark:text-gray-400">
-          COLLECTION
+          CUISINE
         </h5>
       </div>
     </Card>

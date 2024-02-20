@@ -4,6 +4,7 @@ import CollectionCard from "./components/CollectionCard.jsx";
 import CuisineCard from "./components/CuisineCard.jsx";
 import RecipeCard from "./components/RecipeCard.jsx";
 import smileface from "./assets/icon/smileface.svg";
+import MyFooter from "./components/MtFooter.jsx";
 
 export default function App() {
   return (
@@ -55,13 +56,19 @@ export default function App() {
             <RecipeCard />
           </div>
         </div>
-        <div className="recommend"></div>
+        <div className="recommend mt-10">
+          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ml-4">
+            Don’t Miss
+          </h5>
+          <div className="flex flex-wrap mt-4">
+            <CollectionCard />
+            <CollectionCard />
+            <CollectionCard />
+            <CollectionCard />
+          </div>
+        </div>
       </main>
-      <footer></footer>
-
-      {/* <main>
-        <AuthInputs />
-      </main> */}
+      <MyFooter />
     </>
   );
 }
